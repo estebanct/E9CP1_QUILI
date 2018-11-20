@@ -9,3 +9,9 @@ $("a[href= '#']").on("click", function(event){
     })
 
 
+ $(".header__main > h2").ready(function () {
+    var size = $(".header__main h2").css("font-size");
+    size = parseInt(size);
+    var new_size = size * 2;
+     $(".header__main h2").css("font-size", new_size + "px");
+    })
