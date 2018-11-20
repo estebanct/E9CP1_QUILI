@@ -1,10 +1,8 @@
-$(".article").eq(3)
-    .children(".article__body")
-    .children("ul")
-    .children("li:last")
-    .html("<a href='https://pinterest.com' > Pinterest </a>");
+var pint = $("body article:nth-child(5) ul li:nth-child(4) a");
+    pint.text("Pinterest");
+    pint.prop('href', 'https://pinterest.com');
 
-$("a[href= '#']").on("click", function(event){
+$("a[href = '#']").on("click", function(event){
     event.preventDefault()
     })
 
